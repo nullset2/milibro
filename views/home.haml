@@ -2,5 +2,9 @@
   
   %form{ action: "message", method: "post" }
     %input{ type: "text", name: "book", placeholder: "¿CUAL ES TU LIBRO, LOCO?", size: 75 }
-    %input{ type: "integer", name: "amount", placeholder: "¿EN CUANTOS PAISES TRIUNFA TU LIBRO, LOCO?", size: 75 }
+    %select{ name: "amount_of_countries" }
+      %option{ value: 0 }= "¿EN CUANTOS PAISES TRIUNFA TU LIBRO, LOCO?"
+      %option{ value: 10 }= "10"
+      %option{ value: 20 }= "20"
+      %option{ value: 30 }= "30"
     %input{ type: "submit", value: "YA ESTA PAPU, TE DEJO 10!" }

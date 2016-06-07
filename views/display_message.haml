@@ -1,5 +1,2 @@
 .wrapper
-  %h1 "Mi Libro..."
-
-  %h1 "...Está siendo un exito de ventas en todos los paises de habla hispana..."
-
+  %h1 Mi Libro, #{@book}, #{@random_presentation}: #{@random_locations[0..@random_locations.size - 2].join(", ")} y #{@random_locations.last}; por favor, léelo, sé que te va a gustar.

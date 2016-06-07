@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.8)
+    byebug (8.2.5)
     haml (4.0.7)
       tilt
     multi_json (1.12.1)
@@ -27,6 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   haml
   sinatra
   sinatra-contrib

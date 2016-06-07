@@ -1,6 +1,6 @@
-%h1 "Mi Libro..."
-%form{ controller: "tool", action: "activation", method: "post" }
-  %input{ type: "text", name: "libro", placeholder: "¿CUAL ES TU LIBRO, LOCO?", size: 100 }
-
-%h1 "...Está siendo un exito de ventas en todos los paises de habla hispana..."
-
+.wrapper
+  
+  %form{ action: "message", method: "post" }
+    %input{ type: "text", name: "book", placeholder: "¿CUAL ES TU LIBRO, LOCO?", size: 75 }
+    %input{ type: "integer", name: "amount", placeholder: "¿EN CUANTOS PAISES TRIUNFA TU LIBRO, LOCO?", size: 75 }
+    %input{ type: "submit", value: "YA ESTA PAPU, TE DEJO 10!" }

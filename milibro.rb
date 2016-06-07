@@ -7,11 +7,11 @@ get "/" do
 end
 
 post "/message" do
-  @presentations = ["está siendo un éxito en",
+  presentations = ["está siendo un éxito en",
                     "está siendo un éxito de ventas en todas las librerías de habla hispana", 
                     "está siendo un éxito de ventas en toda la orbita hispanohablante"]
 
-  @locations = ["Argentina",
+  locations = ["Argentina",
                 "Bolivia",
                 "Brasil",
                 "Chile",
@@ -65,7 +65,7 @@ post "/message" do
                 "China",
                 "Antartida",
                 "La antigua civilización de la atlántida",
-                "La vuelta de la esquina",
+                "A la vuelta de la esquina",
                 "Egipto",
                 "Rusia",
                 "Venecia",
@@ -74,6 +74,10 @@ post "/message" do
                 "Hasta la chingada",
                 "Narnia",
                 "Bosnia-Herzegovina"]
+
+  @book = params[:book]
+  @random_locations = locations.sample(params[:amount_of_countries].to_i)
+  @random_presentation = presentations.sample
 
   haml :display_message
 end
